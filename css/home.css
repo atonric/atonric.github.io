@@ -1,0 +1,183 @@
+/*Criando dados importantes*/
+@keyframes left_to_right {
+    from {
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 5;
+    } 
+}
+@font-face {
+    font-family: Apercu;
+    src: url(fonts/Apercu/ApercuRegular.otf);
+}
+@font-face {
+    font-family: Apercu;
+    src: url(fonts/Apercu/ApercuBold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Hanson;
+    src: url(fonts/Hanson/Hanson-Bold.otf);
+}
+@keyframes example {
+    0%   {color: #0B0B0B;}
+    100% {color: #F4F1EC;}
+}
+::selection {
+    color: black;
+    background: white;
+}
+
+/*Inicio do CSS*/
+html body{
+    background-color: #0B0B0B;
+}
+
+element.style {
+    display: block;
+}
+
+/* Nav bar */
+#container {
+    
+    font-family: 'Apercu';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+#container {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    display: block;
+}
+    /* Texto da nav bar*/
+#caixa {
+    width: 95%;
+    background: linear-gradient(to right bottom, #E6E6FA, #FFF0F5, #E6E6FA);
+    color: #fff;
+    margin: -1px auto 0 auto;
+    box-shadow: 0 1px 20px 0 #000;
+    border-radius: 99px;
+    display: block;
+}
+
+#caixa h2 {
+    font-family: 'Apercu';
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    text-align: left;
+    margin-left: 10%;
+    height: 40%;
+    line-height: 40px;
+}
+
+h2 a{
+    text-decoration: none;
+    color: #0b0b0b;
+    padding: 15px;
+} h2 a:hover{color: #3a3a3a; font-size: 14px;}
+
+
+/* Caixas invertidas */
+
+    /* Caixa cor invertida topo*/
+span.a {
+    display: inline-block;
+    width: 40%;
+    height: 250px;
+    background-color: #0b0b0b; 
+    filter: invert();
+}
+    /*Caixa cor invertida do texto maior (h2)*/
+span.b {
+    display: inline-block;
+    width: unset;
+    height: unset;
+    background-color: #0b0b0b; 
+    filter: invert();
+}
+
+/*Texto maior do topo que se mexe*/
+
+.container-fluid h1 {
+    font-family: 'Hanson';
+    color: #F4F1EC;
+    font-size: 50px;
+    margin-left: 7.5%;
+    margin-top: 5%;
+    animation: left_to_right 3s ease;
+}
+.container-fluid h1:hover{
+    cursor: default;   
+}
+
+/*9 bolas de enfeite*/
+.container-fluid h4 {
+    font-family: 'Hanson';
+    font-size: 80px;
+    color: #F4F1EC;
+    margin-left: 7.5%;
+    margin-top: -10%;
+    margin-bottom: 7.5%;
+    letter-spacing: -10px;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.container-fluid h4:hover{
+    cursor: default;   
+}
+
+/*Texto do lado da imagem e imagem*/
+
+.container-fluid h2 {
+    font-family: 'Hanson';
+    color: #F4F1EC;
+    font-size: 30px;
+    margin-left: 50%; margin-right: 5%;
+    margin-top: 6%;
+}
+.imag1 img{
+    margin-top: -500px;
+    opacity: 50%;
+    border-radius: 5px;
+    margin-left: 4%;
+}
+.imag1 img:hover{
+    margin-top: -500px;
+    opacity: 100%;
+    transition: 0.6s;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+/*Terceiro texto (teste)*/
+
+.container-fluid h3 {
+    font-family: 'Hanson';
+    color: #F4F1EC;
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 50%;
+}
+
+/*Caixona no final*/
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 95%;
+    height: 200px;
+    background: linear-gradient(to right bottom, #E6E6FA, #FFF0F5, #E6E6FA);
+    color: lavender;
+    text-align: center;
+    margin: -1px auto 0 auto;
+    border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;
+}
+

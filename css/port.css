@@ -1,0 +1,182 @@
+/*Criando dados importantes*/
+@keyframes left_to_right {
+    from {
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 10;
+    } 
+}
+@font-face {
+    font-family: Apercu;
+    src: url(fonts/Apercu/ApercuRegular.otf);
+}
+@font-face {
+    font-family: Apercu;
+    src: url(fonts/Apercu/ApercuBold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Hanson;
+    src: url(fonts/Hanson/Hanson-Bold.otf);
+}
+::selection {
+    color: black;
+    background: white;
+}
+
+/*Inicio do CSS*/
+html body{
+    background-color: #0B0B0B;
+}
+
+element.style {
+    display: block;
+}
+
+/* Nav bar */
+#container {
+    font-family: 'Apercu';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+#container {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    display: block;
+}
+    /* Texto da nav bar*/
+#caixa {
+    width: 95%;
+    background: linear-gradient(to right bottom, #E6E6FA, #FFF0F5, #E6E6FA);
+    color: #fff;
+    margin: -1px auto 0 auto;
+    box-shadow: 0 1px 20px 0 #000;
+    border-radius: 99px;
+    display: block;
+}
+
+#caixa h2 {
+    font-family: 'Apercu';
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    text-align: left;
+    margin-left: 10%;
+    height: 40%;
+    line-height: 40px;
+}
+
+h2 a{
+    text-decoration: none;
+    color: #0b0b0b;
+    padding: 10px;
+} h2 a:hover{color: #3a3a3a; font-size: 14px;}
+
+/* Caixas invertidas */
+
+    /* Caixa cor invertida topo*/
+span.a {
+    display: inline-block;
+    width: 40%;
+    height: 100px;
+    background-color: #0b0b0b; 
+    filter: invert();
+}
+
+.container-fluid h1 {
+    font-family: 'Hanson';
+    color: #F4F1EC;
+    font-size: 50px;
+    margin-left: 35%;
+    margin-top: 5%;
+    animation: left_to_right 3s ease;
+}
+.container-fluid h1:hover{
+    cursor: default;   
+}
+
+/*Terceiro texto (teste)*/
+
+.container-fluid h3 {
+    font-family: 'Hanson';
+    color: #F4F1EC;
+    font-size: 30px;
+    margin-left: 0%;
+    margin-top: 6%;
+ 
+    
+}
+
+/*Caixona no final*/
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 95%;
+    height: 200px;
+    background: linear-gradient(to right bottom, #E6E6FA, #FFF0F5, #E6E6FA);
+    color: lavender;
+    text-align: center;
+    margin: -1px auto 0 auto;
+}
+
+/*Imagens*/
+
+img{
+    border: 4px solid #F4F1EC;
+    border-radius: 2px;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+  
+.linha {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+  /* Cria quatro colunas */
+.coluna {
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 7.5px;
+}
+  
+.coluna img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+  
+/* Layout responsivo - substitue 2 por 4 */
+  @media screen and (max-width: 800px) {
+    .coluna {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+/* Layout responsivo - faz as colunas ficarem em cima da outra */
+  @media screen and (max-width: 600px) {
+    .coluna {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
