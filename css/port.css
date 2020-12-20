@@ -9,16 +9,16 @@
 }
 @font-face {
     font-family: Apercu;
-    src: url(fonts/Apercu/ApercuRegular.otf);
+    src: url(../fonts/Apercu/ApercuRegular.otf);
 }
 @font-face {
     font-family: Apercu;
-    src: url(fonts/Apercu/ApercuBold.otf);
+    src: url(../fonts/Apercu/ApercuBold.otf);
     font-weight: bold;
 }
 @font-face {
     font-family: Hanson;
-    src: url(fonts/Hanson/Hanson-Bold.otf);
+    src: url(../fonts/Hanson/Hanson-Bold.otf);
 }
 ::selection {
     color: black;
