@@ -1,11 +1,7 @@
 /*Criando dados importantes*/
 @keyframes left_to_right {
-    from {
-      margin-left: -100%;
-    }
-    to {
-      margin-left: 5;
-    } 
+    from {margin-left: -100%;}
+    to {margin-left: 5;} 
 }
 @font-face {
     font-family: Apercu;
@@ -33,7 +29,6 @@
 html body{
     background-color: #0B0B0B;
 }
-
 element.style {
     display: block;
 }
@@ -88,9 +83,7 @@ a img{
     padding-top: 10px
 }
 
-
 /* Caixas invertidas */
-
     /* Caixa cor invertida topo*/
 span.a {
     display: inline-block;
@@ -109,7 +102,6 @@ span.b {
 }
 
 /*Texto maior do topo que se mexe*/
-
 .container-fluid h1 {
     font-family: 'Hanson';
     color: #F4F1EC;
@@ -117,6 +109,7 @@ span.b {
     margin-left: 7.5%;
     margin-top: 5%;
     animation: left_to_right 3s ease;
+    user-select: none;
 }
 .container-fluid h1:hover{
     cursor: default;   
@@ -140,7 +133,6 @@ span.b {
 }
 
 /*Texto do lado da imagem e imagem*/
-
 .container-fluid h2 {
     font-family: 'Hanson';
     color: #F4F1EC;
@@ -163,7 +155,6 @@ span.b {
 }
 
 /*Terceiro texto (teste)*/
-
 .container-fluid h3 {
     font-family: 'Hanson';
     color: #F4F1EC;
@@ -203,7 +194,7 @@ span.b {
             margin-top: 0px;}
     .container-fluid h1 {
         font-size: 40px;
-    }    
+    }
     .container-fluid h2 {
         margin-left: 40%;
         margin-right: 5%;
@@ -211,5 +202,4 @@ span.b {
     .container-fluid h4 {
         font-size: 65px;
     }
-
-  }
+}

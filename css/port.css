@@ -1,11 +1,7 @@
 /*Criando dados importantes*/
 @keyframes left_to_right {
-    from {
-      margin-left: -100%;
-    }
-    to {
-      margin-left: 10;
-    } 
+    from {margin-left: -100%;}
+    to {margin-left: 10;} 
 }
 @font-face {
     font-family: Apercu;
@@ -89,7 +85,6 @@ a img{
     }
 
 /* Caixas invertidas */
-
     /* Caixa cor invertida topo*/
 span.a {
     display: inline-block;
@@ -98,7 +93,6 @@ span.a {
     background-color: #0b0b0b; 
     filter: invert();
 }
-
 .container-fluid h1 {
     font-family: 'Hanson';
     color: #F4F1EC;
@@ -106,21 +100,19 @@ span.a {
     margin-left: 35%;
     margin-top: 5%;
     animation: left_to_right 3s ease;
+    user-select: none;
 }
 .container-fluid h1:hover{
     cursor: default;   
 }
 
 /*Terceiro texto (teste)*/
-
 .container-fluid h3 {
     font-family: 'Hanson';
     color: #F4F1EC;
     font-size: 30px;
-    margin-left: 0%;
-    margin-top: 6%;
- 
-    
+    margin-left: 15%; margin-right: 15%;
+    margin-top: 6%; 
 }
 
 /*Caixona no final*/
@@ -151,7 +143,6 @@ img:hover{
     box-sizing: border-box;
 }
 
-  
 .linha {
     display: -ms-flexbox; /* IE10 */
     display: flex;
@@ -192,5 +183,8 @@ img:hover{
     }
     .container-fluid h1 {
         font-size: 30px;
+    }
+    .container-fluid h3 {
+        font-size: 20px;
     }
   }

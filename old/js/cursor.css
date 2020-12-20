@@ -1,0 +1,24 @@
+
+  html {
+    height: 100%; /* requires for stable body height */
+  }
+  
+  body {
+    min-height: 100%; /* requires for 'mix-blend-mode' */
+    cursor: none;
+    color: #000;
+    background-color: #fff; /* requires for 'mix-blend-mode' */
+  }
+  
+  .cursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    top: var(--y, 0);
+    left: var(--x, 0);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    mix-blend-mode: difference;
+  }

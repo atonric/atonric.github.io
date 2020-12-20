@@ -108,7 +108,7 @@ span.a {
     margin-top: 6%;
 }
 
-/*Caixona no final*/
+/*Caixona*/
 .footer {
     width: 25em;
     height: 40em;
@@ -131,7 +131,7 @@ span.a {
     padding-top: 50%;
     margin-left: 40px;
 }
-
+    /*hr linha arcoiris*/
 hr.corhr {
     border: 0px;
     height: 4px;
@@ -147,20 +147,24 @@ hr.corhr {
     text-align: left;
 }
   
-/* Layout responsivo - substitue 2 por 4 */
+/* Layout responsivo - 800px */
   @media screen and (max-width: 800px) {
-   
-    }
-  
-  
-/* Layout responsivo - faz as colunas ficarem em cima da outra */
-  @media screen and (max-width: 600px) {
-    
     .footer {
         width: 95%;
         margin: 50px auto 0px 2.1%;
     }
-    .footer p{
-        font-size: 50px;
+    .dados{
+        padding-top: 25%;
+        margin-left: 40px;
+    }
+    hr.corhr {
+        margin-top: -15px;
+    }
+}
+/* Layout responsivo - 600px */
+  @media screen and (max-width: 600px) {
+    .footer {
+        width: 95%;
+        margin: 50px auto 0px 2.1%;
     }
   }
