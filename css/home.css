@@ -196,7 +196,8 @@ span.b {
         .imag1 img:hover{
             margin-top: 0px;}
     .container-fluid h2 {
-       margin-right: 10%;
+        margin-left: 40%;
+        margin-right: 5%;;
     }
     .container-fluid h4 {
         font-size: 65px;
