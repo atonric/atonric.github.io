@@ -198,4 +198,7 @@ span.b {
     .container-fluid h2 {
        margin-right: 10%;
     }
+    .container-fluid h4 {
+        font-size: 65px;
+    }
   }
