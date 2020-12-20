@@ -191,4 +191,11 @@ span.b {
     .imag1 img{
         max-width: 90%;
     }
+    .imag1 img{
+        margin-top: 0px;}
+        .imag1 img:hover{
+            margin-top: 0px;}
+    .container-fluid h2 {
+       margin-right: 10%;
+    }
   }
