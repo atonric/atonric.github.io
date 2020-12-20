@@ -201,6 +201,9 @@ span.b {
         margin-top: 0px;}
         .imag1 img:hover{
             margin-top: 0px;}
+    .container-fluid h1 {
+        font-size: 40px;
+    }    
     .container-fluid h2 {
         margin-left: 40%;
         margin-right: 5%;
