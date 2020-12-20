@@ -179,4 +179,7 @@ img:hover{
       flex: 100%;
       max-width: 100%;
     }
+    .container-fluid h1 {
+        font-size: 35px;
+    }   
   }
