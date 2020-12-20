@@ -40,13 +40,12 @@ element.style {
 
 /* Nav bar */
 #container {
-    
     font-family: 'Apercu';
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    display: none;
+    display: block;
 }
 #container {
     top: 0;
@@ -181,3 +180,24 @@ span.b {
     border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;
 }
 
+/* Layout responsivo - substitue 2 por 4 */
+@media screen and (max-width: 800px) {
+    .imag1 img{
+        margin-top: -500px;
+        opacity: 50%;
+        border-radius: 5px;
+        margin-left: 4%; 
+        max-width: 50%;
+    }
+  }
+  
+/* Layout responsivo - faz as colunas ficarem em cima da outra */
+  @media screen and (max-width: 600px) {
+    .imag1 img{
+        margin-top: -500px;
+        opacity: 50%;
+        border-radius: 5px;
+        margin-left: 4%;
+        max-width: 90%;
+    }
+  }
