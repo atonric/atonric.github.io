@@ -156,6 +156,10 @@ hr.corhr {
 /* Layout responsivo - faz as colunas ficarem em cima da outra */
   @media screen and (max-width: 600px) {
     
+    .footer {
+        width: 95%;
+        margin: 50px auto 0px 2.1%;
+    }
     .footer p{
         font-size: 50px;
     }
