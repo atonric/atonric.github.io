@@ -1,12 +1,4 @@
 /*Criando dados importantes*/
-@keyframes left_to_right {
-    from {
-      margin-left: -100%;
-    }
-    to {
-      margin-left: 10;
-    } 
-}
 @font-face {
     font-family: Apercu;
     src: url(../fonts/Apercu/ApercuRegular.otf);
@@ -58,7 +50,6 @@ element.style {
     background: linear-gradient(to right bottom, #E6E6FA, #FFF0F5, #E6E6FA);
     color: #fff;
     margin: -1px auto 0 auto;
-    box-shadow: 0 1px 20px 0 #000;
     border-radius: 99px;
     display: block;
 }
@@ -81,12 +72,8 @@ h2 a{
 } h2 a:hover{color: #3a3a3a; font-size: 14px;}
 
 a img{
-    padding-top: 10px;
-    border: 0px;
-    border-radius: 0px;}  
-    a img:hover{
-        transform: scale(0);
-    }
+    padding-top: 10px
+}
 
 /* Caixas invertidas */
 
@@ -94,7 +81,7 @@ a img{
 span.a {
     display: inline-block;
     width: 40%;
-    height: 100px;
+    height: 50px;
     background-color: #0b0b0b; 
     filter: invert();
 }
@@ -102,8 +89,8 @@ span.a {
 .container-fluid h1 {
     font-family: 'Hanson';
     color: #F4F1EC;
-    font-size: 50px;
-    margin-left: 35%;
+    font-size: 30px;
+    margin-left: 5%;
     margin-top: 5%;
     animation: left_to_right 3s ease;
 }
@@ -119,78 +106,57 @@ span.a {
     font-size: 30px;
     margin-left: 0%;
     margin-top: 6%;
- 
-    
 }
 
 /*Caixona no final*/
 .footer {
-    left: 0;
-    bottom: 0;
-    width: 95%;
-    height: 200px;
+    width: 25em;
+    height: 40em;
     background: linear-gradient(to right bottom, #E6E6FA, #FFF0F5, #E6E6FA);
     color: lavender;
     text-align: center;
-    margin: -1px auto 0 auto;
-    border-bottom-left-radius: 50px; border-bottom-right-radius: 50px;
+    margin: 50px auto 0px 2.5%;
+    border-radius: 10px;
+    box-shadow: 0 1px 20px 0 #000;
+    position: relative;
+}
+.footer h3{
+    font-family: 'Hanson';
+    color: #0B0B0B;
+    font-size: 24px;
+    padding-top: 50px;
+    text-align: left;
+}
+.dados{
+    padding-top: 50%;
+    margin-left: 40px;
 }
 
-/*Imagens*/
-
-img{
-    border: 4px solid #F4F1EC;
-    border-radius: 2px;
+hr.corhr {
+    border: 0px;
+    height: 4px;
+    background: linear-gradient(to right, #fea3aa , #f8b88b, #faf884, #baed91, #b2cefe, #f2a2e8);
+    border-radius: 10px;
+    opacity: 100%;
+    margin-left: -1%; margin-right: 10%; margin-top: -5%;
 }
-
-img:hover{
-    transform: scale(1.05);
-}
-
-* {
-    box-sizing: border-box;
-}
-
-  
-.linha {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-  
-  /* Cria quatro colunas */
-.coluna {
-    -ms-flex: 33.33%; /* IE10 */
-    flex: 33.33%;
-    max-width: 33.33%;
-    padding: 0 7.5px;
-}
-  
-.coluna img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+.footer h4{
+    font-family: 'Hanson';
+    color: #0B0B0B;
+    font-size: 16px;
+    text-align: left;
 }
   
 /* Layout responsivo - substitue 2 por 4 */
   @media screen and (max-width: 800px) {
-    .coluna {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
+   
     }
-  }
+  
   
 /* Layout responsivo - faz as colunas ficarem em cima da outra */
   @media screen and (max-width: 600px) {
-    .coluna {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-    .container-fluid h1 {
-        font-size: 30px;
+    
+    .footer p{
+        font-size: 50px;
     }
   }
