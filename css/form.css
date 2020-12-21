@@ -1,0 +1,46 @@
+/* Formulário */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+    font-family: 'Apercu';
+  }
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-family: 'Apercu';
+  }
+  
+  textarea:focus, input:focus{
+    outline: none;
+}
+  /* Estilizando botão */
+  input[type=submit] {
+    background-color: #a07ea8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Botão escurece */
+  input[type=submit]:hover {
+    background-color: #c2a2c9;
+  }
+  
+  .container2 {
+    border-radius: 5px;
+    background: linear-gradient(to right bottom, #E6E6FA, #FFF0F5, #E6E6FA);
+    padding: 20px;
+  }

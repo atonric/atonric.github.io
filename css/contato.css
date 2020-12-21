@@ -75,60 +75,40 @@ a img{
     padding-top: 10px
 }
 
-/* Caixas invertidas */
+/*Caixona direita*/
 
-    /* Caixa cor invertida topo*/
-span.a {
-    display: inline-block;
-    width: 40%;
-    height: 50px;
-    background-color: #0b0b0b; 
-    filter: invert();
+.bodyr {
+    width: 40em;
+    margin: -35em auto 0px 33em;
+}
+.bodyr label{
+    font-family: 'Apercu';
+    font-weight: bold;
+    color: #0B0B0B;
+    font-size: 15px;
+    text-align: left;
 }
 
-.container-fluid h1 {
-    font-family: 'Hanson';
-    color: #F4F1EC;
-    font-size: 30px;
-    margin-left: 5%;
-    margin-top: 5%;
-    animation: left_to_right 3s ease;
-}
-.container-fluid h1:hover{
-    cursor: default;   
-}
-
-/*Terceiro texto (teste)*/
-
-.container-fluid h3 {
-    font-family: 'Hanson';
-    color: #F4F1EC;
-    font-size: 30px;
-    margin-left: 0%;
-    margin-top: 6%;
-}
-
-/*Caixona*/
+/*Caixona esquerda*/
 .footer {
     width: 25em;
-    height: 40em;
+    height: 36em;
     background: linear-gradient(to right bottom, #E6E6FA, #FFF0F5, #E6E6FA);
     color: lavender;
     text-align: center;
     margin: 50px auto 0px 2.5%;
     border-radius: 10px;
     box-shadow: 0 1px 20px 0 #000;
-    position: relative;
 }
 .footer h3{
     font-family: 'Hanson';
     color: #0B0B0B;
-    font-size: 24px;
+    font-size: 20px;
     padding-top: 50px;
     text-align: left;
 }
 .dados{
-    padding-top: 50%;
+    padding-top: 40%;
     margin-left: 40px;
 }
     /*hr linha arcoiris*/
@@ -143,7 +123,7 @@ hr.corhr {
 .footer h4{
     font-family: 'Hanson';
     color: #0B0B0B;
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
 }
   
@@ -159,6 +139,10 @@ hr.corhr {
     }
     hr.corhr {
         margin-top: -15px;
+    }
+    .bodyr {
+        width: 90%;
+        margin: 3em auto 0px 2.5%;
     }
 }
 /* Layout responsivo - 600px */
